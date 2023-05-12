@@ -1,24 +1,64 @@
 import React from 'react';
-import {subscribesPricesProductsDiscount} from "../constant";
+import {useSelector} from "react-redux";
+import SubscribersInstagramServices from "./servicesInstagram/SubscribersInstagramServices";
+import ViewsInstagramServices from "./servicesInstagram/ViewsInstagramServices";
+import LikesInstagramServices from "./servicesInstagram/LikesInstagramServices";
+import SubscribersTelegramServices from "./servicesTelegram/SubscribersTelegramServices";
+import ViewsTelegramServices from "./servicesTelegram/ViewsTelegramServices";
+import SubscribersTikTokServices from "./servicesTikTok/SubscribersTikTokServices";
+import ViewsTikTokServices from "./servicesTikTok/ViewsTikTokServices";
+import LikesTikTokServices from "./servicesTikTok/LikesTikTokServices";
+import SubscribersYouTubeServices from "./servicesYouTube/SubscribersYouTubeServices";
+import LikesYouTubeServices from "./servicesYouTube/LikesYouTubeServices";
+import ViewsYouTubeServices from "./servicesYouTube/ViewsYouTubeServices";
 
 const Cards = () => {
-    return (
-        <div className={'shop-cards-wrapper'}>
-            {
-                subscribesPricesProductsDiscount.map((card) =>
-                    <div className={'shop-card'}>
-                            <h2 className={'card-variables card-child-1'}>{card.quantity}</h2>
-                            <h4 className={'card-variables'}>{card.subscribes}</h4>
-                            <h5 className={'card-variables'}>(Без списания)</h5>
-                            <div className="create-line"></div>
-                            <h2 className={'card-variables old-price'}>{card.oldPrice} ₪</h2>
-                            <h3 className={'card-variables'}>{card.newPrice} ₪</h3>
-                            <button className={'card-btn'}>Заказать</button>
-                    </div>)
-            }
-        </div>
-    );
+
+    const page = useSelector(state => state.page.pageName);
+    const icon = useSelector(state => state.page.pageIcon);
+
+    if(icon === 'Instagram')
+        switch (page){
+            case "subscribesInstagram":
+                return <SubscribersInstagramServices/>;
+            case "likesInstagram":
+                return <LikesInstagramServices/>;
+            case "viewsInstagram":
+                return <ViewsInstagramServices/>;
+            default:
+                return <SubscribersInstagramServices/>;
+        }
+    else if (icon === 'Telegram')
+        switch (page) {
+            case "subscribersTelegram":
+                return <SubscribersTelegramServices/>
+            case "viewsTelegram":
+                return <ViewsTelegramServices/>
+            default:
+                return <SubscribersTelegramServices/>;
+        }
+    else if (icon === 'TikTok')
+        switch (page) {
+            case "subscribersTikTok":
+                return <SubscribersTikTokServices/>
+            case "likesTikTok":
+                return <LikesTikTokServices/>;
+            case "viewsTikTok":
+                return <ViewsTikTokServices/>
+            default:
+                return <SubscribersTikTokServices/>;
+        }
+    else if (icon === 'YouTube')
+        switch (page) {
+            case "subscribersYouTube":
+                return <SubscribersYouTubeServices/>
+            case "likesYouTube":
+                return <LikesYouTubeServices/>;
+            case "viewsYouTube":
+                return <ViewsYouTubeServices/>
+            default:
+                return <SubscribersTikTokServices/>;
+        }
 };
 
 export default Cards;
-
