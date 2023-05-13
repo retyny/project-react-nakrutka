@@ -1,11 +1,11 @@
 import React from 'react';
-import {subscribesPricesProductsDiscountInstagram} from "../../constant";
+import {subscribesPricesProductsDiscountYouTube} from "../../constant";
 
-const SubscribersInstagramServices = () => {
+const SubscribersYouTubeServices = () => {
     return (
         <div className={'shop-cards-wrapper'}>
             {
-                subscribesPricesProductsDiscountInstagram.map((card) =>
+                subscribesPricesProductsDiscountYouTube.map((card) =>
                     <div className={'shop-card'}>
                         <h2 className={'card-variables card-child-1'}>{card.quantity}</h2>
                         <h4 className={'card-variables'}>{card.subscribes}</h4>
@@ -13,7 +13,7 @@ const SubscribersInstagramServices = () => {
                         <div className="create-line"></div>
                         <h2 className={'card-variables old-price'}>{card.oldPrice} ₪</h2>
                         <h3 className={'card-variables'}>{card.newPrice} ₪</h3>
-                        <button className={'card-btn'}>Заказать</button>
+                        <button className={'btn-color-youtube'}>Заказать</button>
                     </div>
                 )
             }
@@ -21,4 +21,4 @@ const SubscribersInstagramServices = () => {
     );
 };
 
-export default SubscribersInstagramServices;
+export default SubscribersYouTubeServices;

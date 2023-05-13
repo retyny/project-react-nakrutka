@@ -16,5 +16,5 @@ const pageSlice = createSlice({
     }
 });
 
-export const {pageAction, pageIconAction} = pageSlice.actions;
+export const {pageAction, pageIconAction, btnColor} = pageSlice.actions;
 export default pageSlice.reducer;

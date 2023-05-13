@@ -190,19 +190,6 @@ code {
   background-color: #f2f2f2;
 }
 
-.card-btn{
-  width: 11vw;
-  background-color: #5162f4;
-  border-radius: 1vw;
-  cursor: pointer;
-  border: none;
-  color: white;
-  font-size: 1.4vw;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
-  margin-bottom: 1vw;
-}
-
 .card-variables{
   margin: 0.3vw;
   font-size: 2vw;
@@ -227,5 +214,77 @@ code {
   text-decoration: line-through;
 }
 
+.btn-color-instagram{
+  width: 11vw;
+  background-color: #5162f4;
+  border-radius: 1vw;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 1.4vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  margin-bottom: 1vw;
+  transition: background 9999999s;
+}
+
+.btn-color-telegram {
+  width: 11vw;
+  background-color: #00abdf;
+  border-radius: 1vw;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 1.4vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  margin-bottom: 1vw;
+}
+
+.btn-color-tiktok {
+  width: 11vw;
+  background-color: #6832a8;
+  border-radius: 1vw;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 1.4vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  margin-bottom: 1vw;
+}
+
+.btn-color-youtube {
+  width: 11vw;
+  background-color: #d22215;
+  border-radius: 1vw;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 1.4vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  margin-bottom: 1vw;
+}
 
 
+
+.active-instagram {
+  background-color: #5162f4;
+  color: #E7E7E7;
+}
+
+.active-telegram {
+  background-color: #00abdf;
+  color: #E7E7E7;
+}
+
+.active-tiktok {
+  background-color: #6832a8;
+  color: #E7E7E7;
+}
+
+.active-youtube {
+  background-color: #d22215;
+  color: #E7E7E7;
+}

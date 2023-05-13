@@ -1,23 +1,24 @@
 import React from 'react';
-import {likesPricesProductsDiscountTikTok} from "../../constant";
+import {viewsPricesProductsDiscountTelegram} from "../../constant";
 
-const LikesTikTokServices = () => {
+const ViewsTelegramServices = () => {
     return (
         <div className={'shop-cards-wrapper'}>
             {
-                likesPricesProductsDiscountTikTok.map((card) =>
+                viewsPricesProductsDiscountTelegram.map((card) =>
                     <div className={'shop-card'}>
                         <h2 className={'card-variables card-child-1'}>{card.quantity}</h2>
-                        <h4 className={'card-variables'}>{card.likes}</h4>
+                        <h4 className={'card-variables'}>{card.views}</h4>
                         <h5 className={'card-variables'}>(Без списания)</h5>
                         <div className="create-line"></div>
                         <h2 className={'card-variables old-price'}>{card.oldPrice} ₪</h2>
                         <h3 className={'card-variables'}>{card.newPrice} ₪</h3>
-                        <button className={'card-btn'}>Заказать</button>
-                    </div>)
+                        <button className={'btn-color-telegram'}>Заказать</button>
+                    </div>
+                )
             }
         </div>
     );
 };
 
-export default LikesTikTokServices;
+export default ViewsTelegramServices;

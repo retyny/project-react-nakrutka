@@ -13,7 +13,7 @@ const ViewsTikTokServices = () => {
                         <div className="create-line"></div>
                         <h2 className={'card-variables old-price'}>{card.oldPrice} ₪</h2>
                         <h3 className={'card-variables'}>{card.newPrice} ₪</h3>
-                        <button className={'card-btn'}>Заказать</button>
+                        <button className={'btn-color-tiktok'}>Заказать</button>
                     </div>)
             }
         </div>

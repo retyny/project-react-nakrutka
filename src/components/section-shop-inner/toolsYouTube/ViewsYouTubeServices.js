@@ -1,11 +1,11 @@
 import React from 'react';
-import {viewsPricesProductsDiscountTelegram} from "../../constant";
+import {viewsPricesProductsDiscountYouTube} from "../../constant";
 
-const ViewsTelegramServices = () => {
+const ViewsYouTubeServices = () => {
     return (
         <div className={'shop-cards-wrapper'}>
             {
-                viewsPricesProductsDiscountTelegram.map((card) =>
+                viewsPricesProductsDiscountYouTube.map((card) =>
                     <div className={'shop-card'}>
                         <h2 className={'card-variables card-child-1'}>{card.quantity}</h2>
                         <h4 className={'card-variables'}>{card.views}</h4>
@@ -13,12 +13,11 @@ const ViewsTelegramServices = () => {
                         <div className="create-line"></div>
                         <h2 className={'card-variables old-price'}>{card.oldPrice} ₪</h2>
                         <h3 className={'card-variables'}>{card.newPrice} ₪</h3>
-                        <button className={'card-btn'}>Заказать</button>
-                    </div>
-                )
+                        <button className={'btn-color-youtube'}>Заказать</button>
+                    </div>)
             }
         </div>
     );
 };
 
-export default ViewsTelegramServices;
+export default ViewsYouTubeServices;

@@ -1,16 +1,16 @@
 import React from 'react';
 import {useSelector} from "react-redux";
-import SubscribersInstagramServices from "./servicesInstagram/SubscribersInstagramServices";
-import ViewsInstagramServices from "./servicesInstagram/ViewsInstagramServices";
-import LikesInstagramServices from "./servicesInstagram/LikesInstagramServices";
-import SubscribersTelegramServices from "./servicesTelegram/SubscribersTelegramServices";
-import ViewsTelegramServices from "./servicesTelegram/ViewsTelegramServices";
-import SubscribersTikTokServices from "./servicesTikTok/SubscribersTikTokServices";
-import ViewsTikTokServices from "./servicesTikTok/ViewsTikTokServices";
-import LikesTikTokServices from "./servicesTikTok/LikesTikTokServices";
-import SubscribersYouTubeServices from "./servicesYouTube/SubscribersYouTubeServices";
-import LikesYouTubeServices from "./servicesYouTube/LikesYouTubeServices";
-import ViewsYouTubeServices from "./servicesYouTube/ViewsYouTubeServices";
+import SubscribersInstagramServices from "./toolsInstagram/SubscribersInstagramServices";
+import ViewsInstagramServices from "./toolsInstagram/ViewsInstagramServices";
+import LikesInstagramServices from "./toolsInstagram/LikesInstagramServices";
+import SubscribersTelegramServices from "./toolsTelegram/SubscribersTelegramServices";
+import ViewsTelegramServices from "./toolsTelegram/ViewsTelegramServices";
+import SubscribersTikTokServices from "./toolsTikTok/SubscribersTikTokServices";
+import ViewsTikTokServices from "./toolsTikTok/ViewsTikTokServices";
+import LikesTikTokServices from "./toolsTikTok/LikesTikTokServices";
+import SubscribersYouTubeServices from "./toolsYouTube/SubscribersYouTubeServices";
+import LikesYouTubeServices from "./toolsYouTube/LikesYouTubeServices";
+import ViewsYouTubeServices from "./toolsYouTube/ViewsYouTubeServices";
 
 const Cards = () => {
 
